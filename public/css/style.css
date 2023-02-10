@@ -1,0 +1,289 @@
+*{
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+}
+
+/* NAVBAR */
+#logo img{
+    height: 40px;
+}
+
+#navbar {
+    padding: 1.2em 1.4em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    border-bottom: 1px solid #F6982D;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li{
+    margin-left: 1em;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    transition: .5s;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover{
+    color: #F6982D
+}
+
+/* CONTAINER */
+.container{
+    min-height: 60vh;
+    padding: 2em;
+}
+
+/* MESSAGES */
+.message{
+    padding: 1em;
+    color: #004585;
+    background-color: #CCE5FF;
+    border: 1px solid #B8DAFF;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto 2em;
+    max-width: 60%;
+}
+
+/* LOGIN/REGISTER */
+.auth-container{
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container h2{
+    margin-bottom: 1em;
+    color: #fff;
+    border-left: 4px solid #F6982D;
+    padding: 0.3em;
+    width: 100px;
+}
+
+.auth-container a{
+    color: #F6982D;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.form-control input,
+.form-control textarea{
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #F6982D;
+}
+
+form input[type="submit"],
+.btn {
+    background-color: transparent;
+    color: #F6982D;
+    border: 2px solid #F6982D;
+    padding: 0.5em 1.2em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .5s;
+}
+
+form input[type="submit"]:hover,
+.btn:hover{
+    background-color: #F6982D;
+    color: #FFF;
+}
+
+/* CREATE/EDIT FORM TOUGHTS */
+.tought-form-container{
+    color: #F6982D;
+}
+
+.tought-form-container a:hover{
+    color: #FFF;
+}
+
+.tought-form-container h1{
+    margin: 1em 0;
+    color: #fff;
+    border-left: 4px solid #F6982D;
+    padding: 0.3em;
+}
+
+.tought-form-container form{
+    max-width: 30%;
+    margin-top: 1.5em;
+}
+
+/* DASHBOARD */
+.title-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.title-container h2{
+    border-left: 4px solid #F6982D;
+    padding: 10px;
+}
+
+.dashboard h3{
+    margin-bottom: 1.5em;
+}
+
+.dashboard ul{
+    list-style: none;
+}
+
+.dashboard li{
+    padding: 12px;
+    border-bottom: 1px solid #F6982D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard .label{
+    font-weight: bold;
+    color: #F6982D;
+}
+
+.dashboard .actions{
+    display: flex;
+}
+
+.dashboard .actions .btn{
+    color: #FFF;
+    border-color: #FFF;
+    margin: 0 0.5em;
+}
+
+.dashboard a{
+    color: #F6982D;
+}
+
+/* HOME */
+.home-header{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-header h1{
+    margin-bottom: 1em;
+}
+
+.home-header span{
+    color: #F6982D;
+}
+
+.home-header p,
+.home-header form{
+    margin-bottom: 1.2em;
+}
+
+.home-header input{
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 0.5em;
+    margin-right: 1em;
+}
+
+.home-header input[type='text']{
+    width: 60%;
+}
+
+.home-header input::placeholder{
+    color: #FFF;
+}
+
+.order-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto 1 em;
+}
+
+.order-container span{
+    font-weight: bold;
+    color: #FFF;
+}
+
+.order-container form{
+    margin: 0;
+}
+
+.order-container button{
+    margin-bottom: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.order-container button:hover,
+.order-container i:hover,
+.order-container a:hover {
+    color: #F6982D;
+}
+
+.order-container button,
+.order-container i,
+.order-container a {
+    margin: 0 7px;
+}
+
+.toughts-container figure{
+    border-bottom: 1px solid #333;
+    padding: 0.5em;
+    max-width: 50%;
+    margin: 0 auto 1em;
+}
+
+.toughts-container blockquote{
+    font-style: italic;
+    font-size: 2em;
+    margin-bottom: .4em;
+}
+
+.toughts-container span{
+    color: #F6982D;
+}
+
+/* FOOTER */
+footer{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #F6982D;
+}
+
+footer span{
+    font-weight: bold;
+    color: #F6982D;
+}
